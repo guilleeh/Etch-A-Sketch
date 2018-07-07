@@ -1,0 +1,23 @@
+.column {
+	margin: 2px 2px 2px 2px;
+	width: 30px;
+	height: 30px;
+	background-color: #FFFFFF;
+	border: 1px solid black;
+
+}
+
+.row {
+	margin: 2px 2px 2px 2px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.box {
+	text-align: center;a
+}
+
+.column:hover {
+	background-color: #B4B7BA
+}
