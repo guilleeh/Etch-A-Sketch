@@ -1,23 +1,41 @@
-.column {
-	margin: 2px 2px 2px 2px;
-	width: 30px;
-	height: 30px;
-	background-color: #FFFFFF;
-	border: 1px solid black;
-
-}
-
 .row {
-	margin: 2px 2px 2px 2px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
+
+.column {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.left-border {
+	border-left: 5px solid black;
+}
+
+.bottom-border {
+	border-bottom: 5px solid black;
+}
+
+.right-border {
+	border-right: 5px solid black;
+}
+
+.top-border {
+	border-top: 5px solid black;
+}
+
+/*
+.box:first-child {
+	border-left: 5px solid black;
+}
+*/
 
 .box {
-	text-align: center;a
+	text-align: center;
 }
-
-.column:hover {
+/*
+.row:hover {
 	background-color: #B4B7BA
 }
+*/
