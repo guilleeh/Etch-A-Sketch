@@ -23,13 +23,14 @@ for( let i = 0; i < 15; i++ ) {
 
 
 //add left border
-let firstChild = document.querySelector('.box');
-firstChild = document.querySelector('.column');
-let elementList = firstChild.children;
-let elementListLength = elementList.length;
+let allBoxes = document.querySelector('.box').children;
+let boxList = allBoxes[0].children;
+console.log(boxList);
+let listLength = boxList.length;
 
-for( let i = 0; i < elementListLength; i++ ) {
- 	elementList[i].classList.add("left-border");
+for( let i = 0; i < listLength; i++ ) {
+ 	boxList[i].classList.add("left-border");
+	// boxList[i].classList.add("change-width");
 }
 
 //right border
@@ -50,8 +51,8 @@ for( let i = 0; i < allInnerLength; i++ ) {
 	allInnerChildren[i].lastChild.classList.add('bottom-border');
 	
 	allInnerChildren[i].onmouseover = function(e) {
-		console.log(e.target);
-		console.log(getRandomColor());
+		// console.log(e.target);
+		// console.log(getRandomColor());
 		e.target.style.backgroundColor = getRandomColor();
 	}
 }
