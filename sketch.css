@@ -32,6 +32,14 @@ body {
 	color: #313d4b;
 }
 
+.dimensions {
+	text-align: center;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	font-family: Geneva;
+	color: #313832;
+}
+
 .row {
 	width: 5px;
 	height: 5px;

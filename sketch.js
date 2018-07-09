@@ -86,8 +86,10 @@ function addBorders(changeSize = 0) {
 	}
 }
 
-//Change size
+//change size
+let sizeDisplay = document.querySelector(".dimensions")
 
+//Change size
 let boardSize = document.querySelector(".size-button");
 boardSize.addEventListener('click', function(){
 	removeBoard(startingSize);
@@ -97,6 +99,7 @@ boardSize.addEventListener('click', function(){
 	}
 	createBoard(startingSize);
 	addBorders(startingSize);
+	sizeDisplay.textContent = `${startingSize}x${startingSize}`;
 })
 
 //reset colors
@@ -104,6 +107,8 @@ let resetColor = document.querySelector(".reset-button");
 resetColor.addEventListener('click', function(){
 	resetBoardColors(startingSize);
 });
+
+
 
 createBoard(startingSize);
 addBorders();
