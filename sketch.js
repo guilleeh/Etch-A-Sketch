@@ -1,5 +1,5 @@
 const container = document.querySelector('.box');
-var startingSize = 16;
+var startingSize = 90;
 function getRandomColor() {
 	var letter = '0123456789ABCDEF';
 	var color = '#';
@@ -91,9 +91,9 @@ function addBorders(changeSize = 0) {
 let boardSize = document.querySelector(".size-button");
 boardSize.addEventListener('click', function(){
 	removeBoard(startingSize);
-	startingSize = prompt("Please enter your board size (Limit: 2 <= size <= 20 )");
-	while( (startingSize < 2 || startingSize > 20) && startingSize != null ){
-		startingSize = prompt("Please enter your board size (Limit: 2 <= size <= 20 )");
+	startingSize = prompt("Please enter your board size (Limit: 2 <= size <= 100 )");
+	while( (startingSize < 2 || startingSize > 100) && startingSize != null ){
+		startingSize = prompt("Please enter your board size (Limit: 2 <= size <= 100 )");
 	}
 	createBoard(startingSize);
 	addBorders(startingSize);
