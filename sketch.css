@@ -1,28 +1,61 @@
+body {
+	background-color: #6F9FD8;
+}
+
+.title {
+	/*text-align: center;
+*/	
+	text-align: center;
+	font-family: Geneva;
+	font-weight: bold;
+	color: #313d4b;
+}
+
+.github {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 8px 8px 8px 8px;
+	font-family: Geneva;
+	color: #313d4b;
+}
+
+.Made {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 8px 8px 8px 8px;
+	border-radius: 5px;
+	font-family: Geneva;
+	color: #313d4b;
+}
+
 .row {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 }
 
 .column {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
 }
 
+
 .left-border {
-	border-left: 5px solid black;
+	border-left: 3px solid black;
 }
 
 .bottom-border {
-	border-bottom: 5px solid black;
+	border-bottom: 3px solid black;
 }
 
 .right-border {
-	border-right: 5px solid black;
+	border-right: 3px solid black;
 }
 
 .top-border {
-	border-top: 5px solid black;
+	border-top: 3px solid black;
 }
 
 /*
@@ -31,7 +64,13 @@
 }
 */
 
+.change-width {
+	width: 50px;
+}
+
 .box {
+	margin: auto;
+	/*width: 37%;*/
 	text-align: center;
 }
 /*
